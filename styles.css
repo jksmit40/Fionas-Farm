@@ -1,0 +1,177 @@
+/*imported fonts */
+/* latin-ext */
+@font-face {
+    font-family: 'Habibi';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/habibi/v21/CSR-4zFWkuqcTTNyQxhfVOY.woff2) format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Habibi';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/habibi/v21/CSR-4zFWkuqcTTNyTRhf.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Irish Grover';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/irishgrover/v23/buExpoi6YtLz2QW7LA4flVgv__RP.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  /** colors: Green: #06A816
+              Orange: #E75D02
+              Black: #000000
+              White: #ffffff
+  **/
+
+/* Global Styles */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px;
+  }
+
+  html {
+    background-color:  #ffffff;
+  }
+
+  body {
+    font-family: 'Habibi';
+  }
+
+  header, footer{
+    background-color: #06a816;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 10px;
+  }
+
+  header p {
+    font-style: italic;
+  }
+
+  main {
+    padding: 20px;
+    line-height: 1.35;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    text-shadow: 1.5px 1.5px black;
+  }
+
+  h2 {
+    font-size: 1.75em;
+    padding-bottom: 10px;
+  }
+
+  h3, p {
+    font-size: 1.25em;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Irish Grover';;
+  }
+
+  nav li {
+    list-style: none;
+
+    }
+
+  nav a {
+    display: block;
+    text-align: center;
+    color: #ffffff;
+    background-color: #E75D02;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #nav_fruit {
+    margin-top: 5vh;
+  }
+
+  #nav_veg {
+    margin-bottom: 5vh;
+  }
+
+  .sale_items {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+  }
+
+  figure {
+    position: relative;
+  }
+
+  figure img {
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+
+  figcaption {
+    background-color: black;
+    color: white;
+    opacity: 0.75;
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    padding-top: 10px;
+    left: 32%;
+    top: 42%;
+    font-size: 1.5em;
+  }
+
+  footer h2 {
+    padding-top: 25px;
+  }
+
+  address {
+    margin-bottom: 25px;
+  }
+
+  small {
+    background-color: #ffffff;
+    color: #06a816;
+    display: block;
+    text-align: center;
+  }
+
+/* media query mobile */
+@media screen and (min-width: 428px) {
+    nav ul {
+        display: grid;
+    }
+}
+
+/* media query medium */
+@media screen and (min-width: 834px) {
+
+}
+
+/*media query large */
+@media screen and (min-width: 1280px) {
+
+}
+
+/*media query xlarge */
+@media screen and (min-width: 1440px) {
+
+}
