@@ -135,6 +135,7 @@
     border-color: white;
     border-width: thick;
     padding-top: 20px;
+    margin: 10px;
   }
 
   .sale_items {
@@ -158,12 +159,12 @@
     color: white;
     opacity: 0.75;
     position: absolute;
-    width: 150px;
+    width: 200px;
     height: 50px;
     padding-top: 10px;
     left: 32%;
-    top: 42%;
-    font-size: 1.5em;
+    bottom: 40%;
+    font-size: 1.0em;
   }
 
   footer h2 {
@@ -172,6 +173,10 @@
 
   address {
     margin-bottom: 25px;
+  }
+
+  dt, dd {
+    display: inline-block;
   }
 
   small {
@@ -215,14 +220,86 @@
     padding: 10px 30px; 
   }
 
+   .figures {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   }
+
+   footer {
+    display: grid;
+    grid-template-areas:
+    "h2c      h2h"
+    "address dl";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+   }
+
+   #contact {
+    grid-area:h2c;
+   }
+
+   #hours {
+    grid-area:h2h;
+   }
+
+   address {
+    grid-area: address;
+   }
+
+   dl {
+    grid-area: dl;
+   }
+
 }
 
 /*media query large */
 @media screen and (min-width: 1280px) {
+   
+  body {
+    overflow-x: hidden;
+  }
 
+  .header_nav {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: #06A816;
+}
+
+  header {
+    display: inline-block;
+    text-align: left;
+  }
+
+  nav a {
+    width: 21vw;
+    border: 2px solid white;
+  }
+
+  #nav_fruit, #nav_veg {
+    margin: 0;
+    padding: 0.5rem;
+  }
+
+  .figures {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  footer {
+    display: grid;
+    grid-template-areas: 
+    "h2c address h2h dl";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 /*media query xlarge */
 @media screen and (min-width: 1440px) {
-
+  .figures {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
 }
